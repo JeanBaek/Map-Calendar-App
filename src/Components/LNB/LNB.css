@@ -1,0 +1,9 @@
+.LNB {
+  &-root {
+    height: 4rem;
+  }
+
+  &-container {
+    width: 1376px;
+  }
+}
