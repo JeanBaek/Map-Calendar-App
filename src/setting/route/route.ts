@@ -1,41 +1,47 @@
 import React from "react";
 
 export type Route = {
+  name: string | null;
   path: string;
   exact: boolean;
-  name: string | null;
   element: ReturnType<typeof elementFrom>;
 };
 
 const routes: Route[] = [
   {
+    name: "Index",
     path: "/", // is equal to path "/month"
     exact: true,
-    name: "Index",
     element: elementFrom(""),
   },
   {
+    name: "Year",
     path: "/year",
     exact: true,
-    name: "Year",
     element: elementFrom(""),
   },
   {
+    name: "Month",
     path: "/month",
     exact: true,
-    name: "Month",
     element: elementFrom(""),
   },
   {
+    name: "Week",
     path: "/week",
     exact: true,
-    name: "Week",
     element: elementFrom(""),
   },
   {
+    name: "Day",
     path: "/day",
     exact: true,
-    name: "Day",
+    element: elementFrom(""),
+  },
+  {
+    name: "Error",
+    path: "*",
+    exact: true,
     element: elementFrom(""),
   },
 ];
