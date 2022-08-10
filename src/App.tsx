@@ -2,12 +2,14 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router";
 import { routes } from "./setting/index";
+import { LNB } from "./Components";
 import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
+    <div className="App">
+      <LNB />
+      <BrowserRouter>
         <Routes>
           {routes.map((route, i) => {
             const { path, element } = route;
@@ -22,8 +24,8 @@ function App() {
             );
           })}
         </Routes>
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
+    </div>
   );
 }
 

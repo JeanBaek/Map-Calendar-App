@@ -49,5 +49,5 @@ const routes: Route[] = [
 export default routes;
 
 function elementFrom(url: string) {
-  return React.lazy(() => import(url));
+  return url && React.lazy(() => import(url));
 }
