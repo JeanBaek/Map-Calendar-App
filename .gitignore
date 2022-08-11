@@ -1,7 +1,5 @@
 # Project files
 node_modules
-package-lock.json
-
 
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,macos
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,macos
