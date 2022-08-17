@@ -1,0 +1,29 @@
+// import React from "react";
+// import { render, screen } from "@testing-library/react";
+
+// import { ToggleButtons } from "../../src/Components";
+// import { isExportDeclaration } from "typescript";
+
+// describe("<ToggleButtons />", () => {
+//   it("render component correctly", () => {
+//     const { container } = render(
+//       <ToggleButtons buttons={[{ name: "testBtn" }]} />
+//     );
+
+//     const buttons = screen.getByText("button");
+//     expect(buttons).toBeInTheDocument();
+
+//     expect(container).toMatchSnapshot();
+//   });
+// });
+
+/** 아래 에러를 해결하지 못해, 현재 rendering test는 어려움
+Details:
+
+    /Users/eunjinbaek/Desktop/JeanBaek/dev/Map-Calendar-App/test/Components/ToggleButtons.test.tsx:15
+        } = (0, _react2.render)(<_Components.ToggleButtons buttons={[{
+                                ^
+
+    SyntaxError: Unexpected token '<'
+
+**/

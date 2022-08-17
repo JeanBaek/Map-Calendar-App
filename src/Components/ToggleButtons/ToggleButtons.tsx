@@ -9,7 +9,7 @@ type ToggleButtonsProps = {
   buttons: Array<{
     name: ButtonName;
   }>;
-  defaultAlignment: ButtonName | null;
+  defaultAlignment?: ButtonName;
 } & ToggleButtonGroupProps;
 
 export default function ToggleButtons({
@@ -18,7 +18,7 @@ export default function ToggleButtons({
   ...groupProps
 }: ToggleButtonsProps) {
   const [alignment, setAlignment] = React.useState<ButtonName | null>(
-    defaultAlignment
+    defaultAlignment || null
   );
 
   const handleAlignment = (
@@ -28,8 +28,6 @@ export default function ToggleButtons({
     setAlignment(newAlignment);
   };
 
-  console.log({ alignment });
-
   return (
     <ToggleButtonGroup
       value={alignment}
@@ -38,12 +36,11 @@ export default function ToggleButtons({
       aria-label="text alignment"
       {...groupProps}
     >
-      <ToggleButton value="plan" aria-label="plan">
-        Plan
-      </ToggleButton>
-      <ToggleButton value="actual" aria-label="actual">
-        Actual
-      </ToggleButton>
+      {buttons.map(({ name }) => (
+        <ToggleButton value={name} aria-label={name}>
+          {name}
+        </ToggleButton>
+      ))}
     </ToggleButtonGroup>
   );
 }
