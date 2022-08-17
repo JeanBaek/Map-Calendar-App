@@ -50,10 +50,5 @@
     "react-router-dom": "^6.3.0",
     "ts-jest": "^28.0.8"
   },
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-      "\\.(css|less|scss)$": "<rootDir>/__mocks__/styleMock.js"
-    }
-  }
+  "jest": {}
 }
