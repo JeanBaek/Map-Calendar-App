@@ -4,7 +4,7 @@
 
 ### [구상]
 
-<img title="Example_Image" width="600px;" src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/0b3aa782-6062-453e-9ebc-67f976717c93/IMG_1567.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220810%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220810T221817Z&X-Amz-Expires=86400&X-Amz-Signature=5f402f256e44a99a2fc28ff65b18746fa9176fbb8f638c50d52ffed19ce3e19d&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22IMG_1567.jpg%22&x-id=GetObject"></img>
+.![Example_Image](./doc/example.jpg)
 
 - 메인 화면 1개
   - 왼쪽 2/3에 달력
